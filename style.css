@@ -10,7 +10,7 @@ body{
 }
 
 .navbar{
-    background-color: #cfffe5;
+    background-color: #97d8c4;
     display: flex;
     align-items: center;
     height: 10vh;
@@ -18,7 +18,7 @@ body{
     padding: 0 5%;
 }
 .logo p{
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 25px;
   letter-spacing: 2px;
@@ -85,4 +85,99 @@ body{
   .hamburger {
     display: block;
   }
+}
+
+.hero-content{
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  /* border: 1px solid; */
+}
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 4%;
+  /* border: 1px solid; */
+}
+.hero-text h1 {
+  font-size: 3em;       
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+.myname{
+  color: #4BAE8A;
+}
+.hero-text h3 {
+  font-size: 2.5em;     
+  font-weight: 600;       
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;   
+  max-width: 600px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #040303;
+}
+
+.hero-buttons{
+  /* border: 1px solid black; */
+  padding-left: 5%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn{
+  text-decoration: none;
+  padding: 10px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn.contact {
+  background: #71a2d7;
+  transition: all 0.8s ease;
+  border: 3px solid #71a2d7;
+  color: #ffffff;
+}
+
+.btn.contact:hover{
+  border: 3px solid #71a2d7;
+  color: rgb(41, 47, 54);
+}
+
+.btn.resume {
+  border: 2px solid #3A3A6C;
+  color: #3A3A6C;
+  transition: all 0.8s ease;
+}
+.btn.resume:hover{
+  border: 2px solid #5a5a99;
+  background: #5a5a99;
+  color: #faf8f8;
+}
+
+.hero-image {
+  /* border: 1px solid; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+.hero-image img{
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 50px;
 }
