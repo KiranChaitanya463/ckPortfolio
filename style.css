@@ -609,5 +609,87 @@ section {
   color: #777;
 }
 
+/* contact */
+
+.contact-section {
+  background: #cfffe5;
+  padding: 60px 20px;
+  text-align: center;
+  scroll-margin-top: 10vh;
+}
+
+.contact-section h2 {
+  color: #4BAE8A;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.contact-section p {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-size: 1.2em;
+  color: #070606;
+  margin-bottom: 40px;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #333;
+  border: 2px solid #4BAE8A;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-btn i {
+  font-size: 1.2em;
+}
+
+.contact-btn:hover {
+  background: #4BAE8A;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
 
 
+.contact-btn.linkedin:hover {
+  background: #0077b5;
+}
+
+.contact-btn.github:hover {
+  background: #333;
+}
+
+.contact-btn.leetcode:hover {
+  background: #f89f1b;
+  color: #fff;
+}
+
+.contact-btn.email:hover {
+  background: #e8685c;
+  color: #fff;
+}
+.footer {
+  background-color: #cfffe5;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  color: #040404;
+  
+}

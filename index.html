@@ -34,7 +34,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
                 
             </ul>
         </div>
@@ -47,7 +47,7 @@
                 <h3>Java Developer</h3>
                 <p>I build backend applications using Java and SpringBoot, and I’m open to entry-level developer roles.</p>
                 <div class="hero-buttons">
-                    <a href="#" class="btn contact"> Contact Me </a>
+                    <a href="#contact" class="btn contact"> Contact Me </a>
                     <a href="Assets/SAI KIRAN - Copy.pdf" class="btn resume" download="">Download Resume</a>
                 </div>
             </div>
@@ -95,7 +95,7 @@
 
 <!-- project section  -->
 <section id="projects" class="projects">
-  <h2>My Projects</h2>
+  <h2>Projects</h2>
   <div class="project-container">
 
     <div class="project-card">
@@ -122,46 +122,68 @@
   </div>
 </section>
 
+
+<!-- skills -->
     <section id="skills" class="skills-section">
-        <h2>My Skills</h2>
+        <h2>Skills</h2>
         <div class="skills-grid">
             <div class="skill-card">
                 <img src="./Assets/java.png" class="skill-icon" alt="Java" />
                 <h4>Java</h4>
-                <div class="level-label">95%</div>
             </div>
             <div class="skill-card">
                 <img src="./Assets/spring-boot-logo.png" class="skill-icon" alt="SpringBoot" />
                 <h4>SpringBoot</h4>
-                <div class="level-label">92%</div>
             </div>
             <div class="skill-card">
                 <img src="./Assets/mysql.png" class="skill-icon" alt="MySQL" />
                 <h4>MySQL</h4>
-                <div class="level-label">80%</div>
             </div>
             <div class="skill-card">
                 <img src="./Assets/git.png" class="skill-icon" alt="Git" />
                 <h4>Git</h4>
-                <div class="level-label">90%</div>
             </div>
             <div class="skill-card">
                 <img src="./Assets/github.png" class="skill-icon" alt="GitHub" />
                 <h4>GitHub</h4>
-                <div class="level-label">78%</div>
             </div>
             <div class="skill-card">
                 <img src="./Assets/html.png" class="skill-icon" alt="HTML" />
                 <h4>HTML</h4>
-                <div class="level-label">60%</div>
             </div>
             <div class="skill-card">
                 <img src="./Assets/css.png" class="skill-icon" alt="CSS" />
                 <h4>CSS</h4>
-                <div class="level-label">60%</div>
             </div>
         </div>
     </section>
+
+    <!-- contact -->
+     <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Let’s connect! Feel free to reach out through email or find me on social platforms.</p>
+    
+    <div class="contact-buttons">
+        <button id="copyEmailBtn" class="contact-btn email">
+        <i class="fas fa-envelope"></i> Copy Email
+        </button>
+
+        <a href="https://www.linkedin.com/in/chaitanya-karri" target="_blank" class="contact-btn linkedin">
+        <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/KiranChaitanya463" target="_blank" class="contact-btn github">
+        <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://leetcode.com/u/SaiKiran_212" target="_blank" class="contact-btn leetcode">
+        <i class="fas fa-code"></i> LeetCode
+        </a>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <p>Thanks for visiting - Keep coding  <i class="fa-regular fa-hand-peace"></i> </p>
+    </footer>
+
     <script>
         const hamburger = document.querySelector('.hamburger');
         const links = document.querySelector('.linksonnav');
@@ -183,6 +205,23 @@
         // Remove hash from URL
         history.replaceState(null, null, " ");
         }
+        });
+
+        /* email button */
+         const copyBtn = document.getElementById('copyEmailBtn');
+        const email = 'kiranchaitanya2003@gmail.com';
+
+        copyBtn.addEventListener('click', () => {
+            navigator.clipboard.writeText(email).then(() => {
+            copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            }).catch(err => {
+            copyBtn.innerHTML = 'Failed to copy';
+            });
+        });
+
+        copyBtn.addEventListener('mouseleave', () => {
+            // restore button text on mouse leave
+            copyBtn.innerHTML = '<i class="fas fa-envelope"></i> Copy Email';
         });
     </script>
 
