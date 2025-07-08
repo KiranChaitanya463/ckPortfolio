@@ -16,6 +16,9 @@ body{
 html {
   scroll-behavior: smooth;
 }
+section {
+  scroll-margin-top: 10vh;
+}
 .navbar {
   position: fixed;
   top: 0;
