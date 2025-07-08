@@ -545,5 +545,66 @@ html {
   background: #3e9c76;
 }
 
+/* skills */
+
+.skills-section {
+  background: #cfffe5;
+  padding: 60px 20px;
+  text-align: center;
+  scroll-margin-top: 100px;
+}
+
+.skills-section h2 {
+  color: #6bbc9e;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.skill-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s;
+  transform-style: preserve-3d;
+  width: 100%;
+  max-width: 150px;
+}
+
+.skill-card:hover {
+  transform: rotateY(10deg) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+.skill-icon {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill-card h4 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.level-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #777;
+}
+
 
 
