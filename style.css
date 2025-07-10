@@ -314,6 +314,7 @@ section {
     height: 90vh;
     gap: 40px;
     justify-content: center;
+    margin-bottom: 20%;
   }
 
   .hero-text {
@@ -439,8 +440,9 @@ section {
 .about-details li {
   margin: 8px 0;
   font-size: 1.05em;
-  color: #141212;
+  color: black;
   line-height: 1.6;
+  font-family: 'Comic Neue', sans-serif;
 }
 
 .about-details li strong {
@@ -455,12 +457,17 @@ section {
   .about-content {
     flex-direction: column;
     text-align: center;
-    gap: 40px;
+    gap: 30px;
+    
   }
 
   .about-image {
     width: 100%;
     max-width: 300px;
+    order: 2;
+  }
+  .about-text {
+    order: 1;
   }
 
   .about-details li strong {
